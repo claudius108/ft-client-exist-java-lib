@@ -24,7 +24,8 @@ package org.expath.exist.ftclient;
 import java.io.InputStream;
 import java.net.URI;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.exist.dom.QName;
 import org.exist.storage.serializers.Serializer;
 import org.exist.xquery.BasicFunction;
@@ -50,7 +51,7 @@ import org.exist.xquery.value.Type;
 
 public class ConnectFunction extends BasicFunction {
 
-	private static final Logger log = Logger.getLogger(ConnectFunction.class);
+	private static final Logger log = LogManager.getLogger(ConnectFunction.class);
 
 	private static final FunctionReturnSequenceType RETURN_TYPE = new FunctionReturnSequenceType(Type.LONG, Cardinality.ZERO_OR_ONE,
 			"an xs:long representing the connection handle.");
