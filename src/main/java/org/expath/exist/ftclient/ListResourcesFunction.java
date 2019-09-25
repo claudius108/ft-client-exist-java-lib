@@ -28,7 +28,8 @@ import java.io.UnsupportedEncodingException;
 import javax.xml.transform.stream.StreamResult;
 
 import org.apache.commons.io.input.CloseShieldInputStream;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.exist.dom.QName;
 import org.exist.dom.memtree.DocumentBuilderReceiver;
 import org.exist.dom.memtree.MemTreeBuilder;
@@ -54,14 +55,15 @@ import org.xml.sax.XMLReader;
  * remote directory.
  * 
  * @author ws
- * @author Adam Retter <adam@existsolutions.com>
- * @author Claudius Teodorescu <claudius.teodorescu@gmail.com>
+ * @author Claudius Teodorescu
+ * @author Adam Retter
+ * 
  */
 public class ListResourcesFunction extends BasicFunction {
 
 	private final static String NAMESPACE_URI = ExistExpathFTClientModule.NAMESPACE_URI;
 	private final static String PREFIX = ExistExpathFTClientModule.PREFIX;
-	private static final Logger log = Logger.getLogger(ListResourcesFunction.class);
+	private static final Logger log = LogManager.getLogger(ListResourcesFunction.class);
 
 	public final static FunctionSignature signature = new FunctionSignature(
 			new QName("list-resources", NAMESPACE_URI, PREFIX),

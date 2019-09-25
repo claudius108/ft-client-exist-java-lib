@@ -33,8 +33,9 @@ import ro.kuberam.libs.java.ftclient.ExpathFTClientModule;
  * Implements the module definition.
  * 
  * @author WStarcev
- * @author Adam Retter <adam@existsolutions.com>
- * @author Claudius Teodorescu <claudius.teodorescu@gmail.com>
+ * @author Claudius Teodorescu
+ * @author Adam Retter
+ * 
  */
 public class ExistExpathFTClientModule extends AbstractInternalModule {
 
@@ -91,7 +92,7 @@ public class ExistExpathFTClientModule extends AbstractInternalModule {
 	 * 
 	 * @param context
 	 *            The Context of the XQuery to store the Connection in
-	 * @param con
+	 * @param remoteConnection
 	 *            The connection to store
 	 * 
 	 * @return A unique ID representing the connection

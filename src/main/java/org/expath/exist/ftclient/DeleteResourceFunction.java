@@ -38,8 +38,9 @@ import org.exist.xquery.value.IntegerValue;
  * Implements a method for retrieving a remote resource.
  * 
  * @author WStarcev
- * @author Adam Retter <adam@existsolutions.com>
- * @author Claudius Teodorescu <claudius.teodorescu@gmail.com>
+ * @author Claudius Teodorescu
+ * @author Adam Retter
+ * 
  */
 public class DeleteResourceFunction extends BasicFunction {
     

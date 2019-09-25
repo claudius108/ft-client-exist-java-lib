@@ -24,7 +24,8 @@ package org.expath.exist.ftclient;
 import java.io.ByteArrayInputStream;
 import java.io.UnsupportedEncodingException;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.exist.dom.QName;
 import org.exist.xquery.BasicFunction;
 import org.exist.xquery.Cardinality;
@@ -46,11 +47,12 @@ import org.exist.xquery.value.Type;
  * Implements a method for storing a resource to a remote directory.
  * 
  * @author WStarcev
- * @author Adam Retter <adam@existsolutions.com>
- * @author Claudius Teodorescu <claudius.teodorescu@gmail.com>
+ * @author Claudius Teodorescu
+ * @author Adam Retter
+ * 
  */
 public class StoreResourceFunction extends BasicFunction {
-	private static final Logger log = Logger.getLogger(StoreResourceFunction.class);
+	private static final Logger log = LogManager.getLogger(StoreResourceFunction.class);
 
 	private static final String NAMESPACE_URI = ExistExpathFTClientModule.NAMESPACE_URI;
 

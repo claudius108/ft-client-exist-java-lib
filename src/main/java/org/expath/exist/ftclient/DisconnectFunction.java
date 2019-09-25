@@ -21,7 +21,8 @@
  */
 package org.expath.exist.ftclient;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import org.exist.dom.QName;
 import org.exist.xquery.BasicFunction;
 import org.exist.xquery.Cardinality;
@@ -39,11 +40,12 @@ import org.exist.xquery.value.Type;
 /**
  * Implements a method for closing a remote connection.
  * 
- * @author Claudius Teodorescu <claudius.teodorescu@gmail.com>
+ * @author Claudius Teodorescu
+ * 
  */
 public class DisconnectFunction extends BasicFunction {
 
-    private static final Logger log = Logger.getLogger(DisconnectFunction.class);
+    private static final Logger log = LogManager.getLogger(DisconnectFunction.class);
     
     public final static FunctionSignature signature = new FunctionSignature(
         new QName("disconnect", ExistExpathFTClientModule.NAMESPACE_URI, ExistExpathFTClientModule.PREFIX),
