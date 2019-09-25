@@ -7,17 +7,17 @@
 	<parent>
 		<groupId>ro.kuberam.expath.exist</groupId>
 		<artifactId>base</artifactId>
-		<version>1.5.3</version>
+		<version>1.6.1</version>
 	</parent>
 
 	<artifactId>ft-client</artifactId>
-	<version>1.1.5</version>
+	<version>1.2.0</version>
 	<name>eXist wrapper for EXPath File Transfer Client module</name>
 	<url>http://expath.org</url>
 
 	<properties>
-		<java-package-name>ftclient</java-package-name>
-		<module-prefix>ft-client</module-prefix>
+		<package.title>EXPath File Transfer Client Module Implementation</package.title>
+		<ftclient.java.lib.version>2.0.0</ftclient.java.lib.version>
 	</properties>
 
 	<dependencies>
@@ -28,8 +28,7 @@
 		<dependency>
 			<groupId>ro.kuberam.libs.java</groupId>
 			<artifactId>ft-client</artifactId>
-			<version>1.1.2</version>
-			<type>jar</type>
+			<version>2.0.0</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
@@ -38,7 +37,35 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.code54.mojo</groupId>
+				<artifactId>buildversion-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>ro.kuberam.maven.plugins</groupId>
+				<artifactId>kuberam-expath-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
