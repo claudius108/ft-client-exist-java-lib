@@ -24,8 +24,7 @@ package org.expath.exist.ftclient;
 import java.io.ByteArrayInputStream;
 import java.io.UnsupportedEncodingException;
 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.exist.dom.QName;
 import org.exist.xquery.BasicFunction;
 import org.exist.xquery.Cardinality;
@@ -51,7 +50,7 @@ import org.exist.xquery.value.Type;
  * @author Claudius Teodorescu <claudius.teodorescu@gmail.com>
  */
 public class StoreResourceFunction extends BasicFunction {
-	private static final Logger log = LogManager.getLogger(StoreResourceFunction.class);
+	private static final Logger log = Logger.getLogger(StoreResourceFunction.class);
 
 	private static final String NAMESPACE_URI = ExistExpathFTClientModule.NAMESPACE_URI;
 

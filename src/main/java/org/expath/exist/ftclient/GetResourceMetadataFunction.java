@@ -28,8 +28,7 @@ import java.io.UnsupportedEncodingException;
 import javax.xml.transform.stream.StreamResult;
 
 import org.apache.commons.io.input.CloseShieldInputStream;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.exist.dom.QName;
 import org.exist.dom.memtree.DocumentBuilderReceiver;
 import org.exist.dom.memtree.MemTreeBuilder;
@@ -58,7 +57,7 @@ import org.xml.sax.XMLReader;
  */
 public class GetResourceMetadataFunction extends BasicFunction {
 
-	private static final Logger log = LogManager.getLogger(GetResourceMetadataFunction.class);
+	private static final Logger log = Logger.getLogger(GetResourceMetadataFunction.class);
 
 	public final static FunctionSignature signature = new FunctionSignature(new QName(
 			"get-resource-metadata", ExistExpathFTClientModule.NAMESPACE_URI,

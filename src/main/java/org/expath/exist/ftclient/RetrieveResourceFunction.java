@@ -23,8 +23,7 @@ package org.expath.exist.ftclient;
 
 import java.io.InputStream;
 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.exist.dom.QName;
 import org.exist.xquery.BasicFunction;
 import org.exist.xquery.Cardinality;
@@ -49,7 +48,7 @@ import org.exist.xquery.value.ValueSequence;
  * @author Claudius Teodorescu <claudius.teodorescu@gmail.com>
  */
 public class RetrieveResourceFunction extends BasicFunction {
-	private static final Logger log = LogManager.getLogger(RetrieveResourceFunction.class);
+	private static final Logger log = Logger.getLogger(RetrieveResourceFunction.class);
 
 	public final static FunctionSignature signature = new FunctionSignature(new QName("retrieve-resource",
 			ExistExpathFTClientModule.NAMESPACE_URI, ExistExpathFTClientModule.PREFIX),
