@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-    	<title />
+    	<title>EXPath File Transfer Client Module</title>
 	</head>
 	<body>
 		<h2>eXist implementation for EXPath File Transfer Client Module</h2>
