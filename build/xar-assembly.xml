@@ -29,6 +29,21 @@
 			<outputFileNameMapping>ft-client-java-lib-${ftclient.java.lib.version}.jar
 			</outputFileNameMapping>
 		</dependencySet>
+		<dependencySet>
+			<groupId>com.jcraft</groupId>
+			<artifactId>jsch</artifactId>
+			<version>0.1.51</version>
+		</dependencySet>
+		<dependencySet>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>3.3</version>
+		</dependencySet>
+<!-- 		<dependencySet> -->
+<!-- 			<groupId>commons-io</groupId> -->
+<!-- 			<artifactId>commons-io</artifactId> -->
+<!-- 			<version>2.2</version> -->
+<!-- 		</dependencySet> -->
 	</dependencySets>
 	<components>
 		<resource>
