@@ -24,9 +24,9 @@
 		</dependencySet>
 		<dependencySet>
 			<groupId>ro.kuberam.libs.java</groupId>
-			<artifactId>ft-client</artifactId>
-			<version>${ftclient.java.lib.version}</version>
-			<outputFileNameMapping>ft-client-java-lib-${ftclient.java.lib.version}.jar
+			<artifactId>${project.artifactId}</artifactId>
+			<version>${java.lib.version}</version>
+			<outputFileNameMapping>${project.artifactId}-java-lib-${java.lib.version}.jar
 			</outputFileNameMapping>
 		</dependencySet>
 		<dependencySet>

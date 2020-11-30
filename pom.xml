@@ -17,7 +17,7 @@
 
 	<properties>
 		<package.title>EXPath File Transfer Client Module Implementation</package.title>
-		<ftclient.java.lib.version>2.0.0</ftclient.java.lib.version>
+		<java.lib.version>2.0.0</java.lib.version>
 	</properties>
 
 	<dependencies>
